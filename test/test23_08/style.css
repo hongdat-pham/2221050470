@@ -1,0 +1,16 @@
+body{
+    color: green;
+}
+p{
+    /* color: brown; */
+    font-size: 20px;
+}
+h1{
+    color: antiquewhite;
+}
+#testId {
+    color: red;
+}
+.testClass{
+    color: blueviolet;
+}
