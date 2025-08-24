@@ -1,0 +1,16 @@
+/* * {
+    color: aqua;
+    font-size: 20px;
+} */
+.demo{
+    color: blue;
+}
+p.demo {
+    color: blueviolet;
+}
+div p{
+    color: aqua;
+}
+.loichuc p{
+    font-size: 30px;
+}
