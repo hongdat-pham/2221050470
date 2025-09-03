@@ -1,3 +1,15 @@
+.Footer{
+    background-color: #2fa4e7;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.New{
+    height: 20px;
+    width: 30px;
+}
 body{
     margin: 0px;
 }
@@ -26,10 +38,12 @@ ul{
 }
 main{
     display: flex;
+    background-color: rgb(194, 180, 180);
 }
 .NoiDung_Trai{
     width: 80%;
     border-radius: 10px;
+    background-color: white;
 }
 .NoiDung_Phai{
     background-color: aquamarine;
@@ -44,21 +58,74 @@ main{
     font-weight: bold;
     border-radius: 10px 10px 0px 0px;
 }
+.TinTuc{
+    padding-bottom: 10px;
+}
 .TinTuc_DanhSach{
     display: flex;
     justify-content: space-between;
 }
 .BaiViet{
-    height: 200px;
-    background-color: gray;
+    height: auto;
+    background-color: white;
     width: 32%;
+    justify-content: center;
 }
 .BaiViet_TieuDe{
-    padding-left: 65%;
+    height: 10%;
+    text-align: end;
     background-color: lightskyblue;
 }
+.BaiViet_Anh{
+    min-height: 70%;
+}
 .BaiViet_Anh img{
-    width: 150px;
+    width: 100%;
     height: 150px;
-    padding-left: 30%;
+}
+.BaiViet_NoiDung{
+    background-color: lightskyblue;
+    margin: 0;
+    padding: 0;
+}
+.ThongBao{
+    padding-bottom: 10px;
+}
+.ThongBao_DanhSach{
+    display: flex;
+    justify-content: space-between;
+}
+.ThongBao_Trai{
+    width: 30%;
+    padding: 10px;
+}
+.ThongBao_Trai_Logo img{
+    height: 210px;
+    width: 100%;
+}
+.ThongBao_Trai_ThoiGian{
+    text-align: end;
+}
+.ThongBao_Trai_NoiDung{
+    color: blue;
+    font-weight: bold;
+    font-size: large;
+}
+.ThongBao_Phai{
+    width: 70%;
+}
+.ThongBao_Phai table{
+    width: 100%;
+}
+.HuongDan{
+    padding: 10px;
+}
+.HuongDan_NoiDung_Trong{
+    width: 100%;
+}
+.HuongDan_Content{
+    width: 80%;
+}
+.HuongDan_ThoiGian{
+    width: 20%;
 }
