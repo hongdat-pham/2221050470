@@ -20,7 +20,7 @@ p{
     background-color:blueviolet;
     /* Nếu có 1 giá trị thì cách xung quanh bằng giá trị đó */
     /* Giá trị 1 là trên và dưới, giá trị 2 là trái và phải */
-    /* Nếu có 4 giá trị thì theo chiều kim đồng hồ: trên, dưới, trái, phải. */
+    /* Nếu có 4 giá trị thì theo chiều kim đồng hồ: trên, phải, dưới, trái. */
     /* margin:50px 30px 100px 10px; */
     width: 50%;
     /* Margin auto dùng để căn khối ra giữa */
