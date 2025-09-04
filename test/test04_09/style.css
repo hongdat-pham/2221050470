@@ -1,0 +1,13 @@
+p{
+    height: 100px;
+    width: 100px;
+    color: aquamarine;
+    padding: 20px 30px 40px 50px;
+    background-color: blueviolet;
+    border-top: 10px dashed blue;
+    border-left: 15px dotted green;
+    border-bottom: 10px double red;
+    border-right: 20px solid yellow;
+    border-radius: 15%;
+    margin: 0 auto;
+}
