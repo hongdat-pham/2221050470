@@ -139,37 +139,58 @@ main{
     background-color: white;
 }
 .Login{
-    padding-bottom: 10px;
+    padding: 15px;
+}
+.Login form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 .User_Icon{
     background-color: lightgray;
-    font-size: x-large;    
+    font-size: x-large; 
+    padding: 5px 3px;
 }
-.Email_Box input{
-    color: #2fa4e7;
+#Email_Box input{
+    align-items: center;
+    padding: 6px;
 }
 .Lock_Icon{
     background-color: lightgray;
-    font-size: x-large; 
+    font-size: x-large;
+    padding: 5px 3px; 
+}
+#Password_Box input{
+    align-items: center;
+    padding-top: 12px;
 }
 .Eye_Icon{
     background-color: lightgray;
     font-size: x-large; 
+    padding: 5px 3px;
 }
 .ForgetPassword a{
     text-decoration: none;
     font-style: italic;
     color: #2fa4e7;
-    text-align: end;
+    padding-left: 60%;
 }
 .Submit input{
     background-color: #2fa4e7;
     color: white;
+    padding: 5px 5px 10px 10px;
+    width: 100%;
+    font-weight: bold;
+    font-size: larger;
 }
 
 .Microsoft input{
     background-color: blue;
     color: white;
+    padding: 5px 5px 10px 10px;
+    width: 100%;
+    font-weight: bold;
+    font-size: larger;
 }
 .Qr_AppStore{
     padding-left: 40px;
