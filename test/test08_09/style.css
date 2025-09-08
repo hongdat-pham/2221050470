@@ -1,0 +1,44 @@
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+.nav_left{
+    display: flex   ;
+}
+.logo_spo i{
+    color: white;
+    font-size: 35px;
+    padding: 20px 20px 20px 30px;
+}
+.logo_home i{
+    color: white;
+    font-size: 30px;
+    padding: 20px 20px 20px 20px;
+    background-color: rgb(36, 34, 34);    
+    border-radius: 50%;
+}
+.logo_search{
+    color: lightgray;
+    font-size: 25px;
+    padding: 20px 20px 20px 20px;
+}
+.search_box form{
+    display: flex;
+    
+}
+.logo_basket{
+    color: lightgray;
+    font-size: 25px;
+    padding: 20px 20px 20px 20px;
+}
+.nav_bar{
+    display: flex;
+}
+.nav_right {
+    display: flex;
+}
+.nav_title_items {
+    justify-content: space-around;
+    padding: 20px 20px 20px 20px;
+}
