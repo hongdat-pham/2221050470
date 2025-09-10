@@ -174,8 +174,13 @@ main{
     background-color: cornflowerblue;
     color: white;
 }
-.song_container_content_imageName{
+.song_container_content_title{
     display: flex;
+    justify-content: space-around;
+}
+.song_container_content_scrollbar{
+    display: flex;
+    margin: 5px;
 }
 .song_container_content_imageName_image img{
     height: 160px;
