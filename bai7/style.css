@@ -18,10 +18,17 @@ body{
     justify-items: center;
     justify-content: center;
 }
+.title{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
 .title p{
     color: white;
     font-weight: bold;
     font-size: 48px;
+    padding-bottom: 10px;
+    margin: 0;
+    margin-bottom: 10px;
 }
 .email{
     width: 100%;
@@ -33,13 +40,71 @@ body{
 .email_box input{
     width: 100%;
     background-color: black;
-    border-color: white;
+    border: 1px solid gray;
     border-radius: 5px;
-    height: 35px;
+    height: 40px;
 }
-.button{
-    color: green;
+button{
+    color: black;
+    background-color: #1ed760;
+    width: 100%;
+    padding: 15px;
+    margin: 5px;
+    margin-top: 10px;
+    border-radius: 90px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.or{
+    color: white;
+    text-align: center;
+    font-size: large;
+    font-weight: 500;
+}
+.or p{
+    margin: 0;
+    padding: 0;
+}
+.button1 button{
+    color: white;
     background-color: black;
-  border: none;
-    width: 100px;
+    width: 100%;
+    padding: 15px;
+    margin: 5px;
+    margin-top: 10px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 15px;
+    border: 1px solid gray;
+}
+.button1 i{
+    padding-right: 10px;
+}
+.signup{
+    text-align: center;
+    padding: 50px 0;
+}
+.signup p{
+    color: lightgrey;
+}
+.signup a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+.signup a:hover{
+    color: #1ed760;
+}
+.etc{
+    color: lightgray;
+    font-size: small;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.etc a{
+    color: lightgrey;
+}
+.etc a:hover{
+    color: #1ed760;
 }
