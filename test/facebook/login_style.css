@@ -1,0 +1,58 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: lightgray;
+}
+
+.content-top{
+    
+    background-color: white;
+    width: 30%;
+    margin: auto;
+    height: 700px;
+    
+}
+.logo h1{
+    text-align: center;
+    color: blue;
+    font-size: 50px;
+    background-color: lightgray;
+}
+.container{
+    border-radius: 10px;
+    height: 500px;
+    width: 100%;
+    border: 2px solid black;
+}
+.container-top{
+    text-align: center;
+}
+.container-top h2{
+    margin: 0;
+    padding: 0;
+}
+.container-top p{
+    margin: 0;
+    padding-top: 5px;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 15px;
+    border-bottom: 1px solid gray ;
+    padding-bottom: 10px;
+}
+.container-middle{
+    width: 90%;
+    margin: auto;
+    margin-top:15px ; 
+}
+.input{
+    display: inline-block;
+
+}
+input{
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+
+
