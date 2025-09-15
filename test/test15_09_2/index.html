@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>facebook</h1>
+        
+        <div class="signup-form">
+            <h2>Create a new account</h2>
+            <p class="subtitle">It's quick and easy.</p>
+            
+            <form>
+                <div class="name-fields">
+                    <input type="text" placeholder="First name">
+                    <input type="text" placeholder="Surname">
+                </div>
+                
+                <div class="birthday-fields">
+                    <div class="birthday-day">
+                        <select>
+                            <option selected disabled>16</option>
+                            <!-- Other days would go here -->
+                        </select>
+                    </div>
+                    <div class="birthday-month">
+                        <select>
+                            <option selected disabled>Sep</option>
+                            <!-- Other months would go here -->
+                        </select>
+                    </div>
+                    <div class="birthday-year">
+                        <select>
+                            <option selected disabled>2025</option>
+                            <!-- Other years would go here -->
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="gender-fields">
+                    <label class="gender-option">
+                        <input type="radio" name="gender" value="female">
+                        <span>Female</span>
+                    </label>
+                    <label class="gender-option">
+                        <input type="radio" name="gender" value="male">
+                        <span>Male</span>
+                    </label>
+                    <label class="gender-option">
+                        <input type="radio" name="gender" value="custom">
+                        <span>Custom</span>
+                    </label>
+                </div>
+                
+                <input type="text" placeholder="Mobile number or email address">
+                <input type="password" placeholder="New password">
+                
+                <p class="disclaimer">
+                    People who can exercise may have uploaded your contact information to Facebook. <a href="#">Learn more</a>.
+                </p>
+                
+                <p class="terms">
+                    By clicking Sign Up, you agree to our <a href="#">Terms</a>, <a href="#">Privacy Policy</a> and <a href="#">Cookies Policy</a>. You may receive Slide notifications from us and coin opt out at any time.
+                </p>
+                
+                <button type="submit" class="signup-btn">Sign Up</button>
+            </form>
+            
+            <div class="divider"></div>
+            
+            <p class="login-link">Already have an account?</p>
+        </div>
+    </div>
+</body>
+</html>
