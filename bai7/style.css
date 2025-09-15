@@ -1,0 +1,45 @@
+body{
+    background-color: black;
+    justify-content: space-between;
+    width: 20%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+}
+.logo{
+    
+    font-size: 40px;
+    padding-top: 100px;
+    color: white;
+    padding-left: 130px;
+}
+.logo i{
+    justify-items: center;
+    justify-content: center;
+}
+.title p{
+    color: white;
+    font-weight: bold;
+    font-size: 48px;
+}
+.email{
+    width: 100%;
+}
+.email_title{
+    color: white;
+    font-weight: bold;
+}
+.email_box input{
+    width: 100%;
+    background-color: black;
+    border-color: white;
+    border-radius: 5px;
+    height: 35px;
+}
+.button{
+    color: green;
+    background-color: black;
+  border: none;
+    width: 100px;
+}

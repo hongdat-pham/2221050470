@@ -1,0 +1,15 @@
+body{
+    background-color: aliceblue;
+    margin: 0;
+    display: flex;
+}
+.noidung-trai{
+    width: 60%;
+    height: 500px;
+    background-color: aqua;
+}
+.noidung-phai{
+    width: 40%;
+    height: 500px;
+    background-color: aquamarine;
+}
