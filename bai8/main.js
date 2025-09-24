@@ -74,3 +74,4 @@ document.writeln(toDay.getMonth()+1);
 document.writeln(toDay.getDate());
 //In thứ
 document.writeln(toDay.getDay());
+//In giờ
