@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    // .name để tạo div với class name
+    <div class="box"></div>
+
+    // #name để tạo div với id name
+    <div id="box"></div>
+
+    // .name1+.name2 để tạo 2 thẻ div cùng cấp có class name1 và name2
+    <div class="box"></div>
+    <div class="box"></div>
+
+    // .name1>.name2+.name3 tạo 1 thẻ div với class name1 bên ngoài và 2 class con bên trong
+    <div class="box">
+        <div class="box-inner"></div>
+        <div class="box-content"></div>
+    </div>
+
+    // .name1>.name2+.name3^.name4>name5 giống bên trên nhưng tới name 4 là cùng cấp với name1
+    <div class="header">
+        <div class="header-inner"></div>
+        <div class="header-content"></div>
+    </div>
+    <div class="footer">
+        <div class="footer-inner"></div>
+    </div>
+
+    // ul>li*n để tạo n phần tử li bên trong thẻ ul
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    // ul>li.items$*5 để tạo class items từ 1 đến 5
+    <ul>
+        <li class="items1"></li>
+        <li class="items2"></li>
+        <li class="items3"></li>
+        <li class="items4"></li>
+        <li class="items5"></li>
+    </ul>
+
+    // khi bọc bằng thẻ nào đó muốn bôi đên toàn bộ thì ấn vào tên thẻ rồi ấn ctrl + shift + P xong ghi emmet: outward
+    // khi bọc bằng thẻ nào đó muốn bôi đên phần tử thì ấn vào tên thẻ rồi ấn ctrl + shift + P xong ghi emmet: inward
+
+    //
+    <ul class="ect">
+        <li class="etc-items">
+            <a href="" class="12">home</a>
+        </li>
+        <li class="etc-items">
+            <a href="" class="12">about</a>
+        </li>
+        <li class="etc-items">
+            <a href="" class="12">contact</a>
+        </li>
+        <li class="etc-items">
+            <a href="" class="12">blog</a>
+        </li>
+        <li class="etc-items">
+            <a href="" class="12">user</a>
+        </li>
+        <li class="etc-items">
+            <a href="" class="12">cart</a>
+        </li>
+    </ul>
+
+    <ul class="1">
+        <li class="2"><a href="" class="3">items1</a></li>
+        <li class="2"><a href="" class="3">items2</a></li>
+        <li class="2"><a href="" class="3">items3</a></li>
+        <li class="2"><a href="" class="3">items4</a></li>
+        <li class="2"><a href="" class="3">items5</a></li>
+    </ul>
+</body>
+</html>
