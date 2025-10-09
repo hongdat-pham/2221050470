@@ -57,36 +57,3 @@ let myDate3 = new Date();
 //     `);
 
 //-----------------------------------------------------------------------------------------------------------
-
-// setTimeout được sử dụng để thực hiện một hàm sau một khoảng thời gian delay xác định
-// Cú pháp setTimeout(function, milliseconds, param1, param2, ...)
-
-// Ôn lại 3 cách khai báo hàm
-// C1: arrow function
-const arrow = () =>{
-    document.writeln(`Hello World!`)
-}
-// Gọi hàm 
-// arrow();
-// setTimeout(arrow,10000);
-// C2: function declaration
-function hello (){
-    document.writeln(`Xin chào`);
-}
-// setTimeout(hello,10000);
-// C3: function expression
-let 你好 = function(){
-    document.writeln(`我是越南人`);
-}
-// Gọi hàm
-// 你好();
-// setTimeout(你好,10000);
-
-// 2. Truyền trực tiếp function vào setTimeout
-
-// arrow function
-// setTimeout(() => {
-//     document.writeln(`Hello World!`);
-// },5000);
-
-// function declaration
