@@ -141,8 +141,82 @@
 //----------------------------------------------------------------------------------------------------------
 
 // Toán tử spread(...)  dùng để tạo clone của mảng
-let arr1 = [3,7,'Dat',10,'Midnight'];
-let arr2 = [...arr1];
+// let arr1 = [3,7,'Dat',10,'Midnight'];
+// let arr2 = [...arr1];
 // document.writeln(arr2);
-arr2[0]=99;
-document.writeln(arr2);
+// arr2[0]=99;
+// document.writeln(arr2);
+
+// Truyền đối số vào trong hàm 
+// const sum = (a, b, c) => {
+//     return a+b+c;
+// }
+// let arr = [8, 2, 3];
+// let total = sum(...arr);
+// document.writeln(total);
+
+// Kết hợp mảng
+// let arr1 = [3, 6, 9];
+// let arr2 = [2, 5, 8];
+// let connector = [...arr1, ...arr2];
+// document.writeln(connector);
+
+// Tạo mảng mới và thêm phần tử 
+// let arr = [1, 2, 3];
+// let arrAdvance = [...arr, 4]
+// document.writeln(arrAdvance);
+
+// Chuyển đổi iterable thành chuỗi
+// let word = `Humg`;
+// let exchange = [...word,5];
+// document.writeln(exchange);
+
+// Phương thức sort dùng để sắp xếp 
+// Cú pháp array.sort([compareFunction])
+// array: mảng cần được sắp xếp 
+// compareFunction: hàm so sánh được dùng để xác định thứ tự sắp xếp 
+// Nếu không được cung cấp, sort() sẽ được sắp xếp dưới dạng Unicode.
+// Hàm so sánh( Compare Function)
+// 1. Nếu được cung cấp Compare Function sẽ nhận hai đối số, thường được gọi là a và b.
+// 2. Nếu compareFunction(a, b) trả về một giá trị < 0, a sẽ được đặt trước b.
+// 3. Nếu compareFunction(a, b) trả về một giá trị = 0, thứ tự giữa a và b không thay đổi.
+// 4. Nếu compareFunction(a, b) trả về một giá trị > 0, b sẽ được đặt trước a.
+
+// let arr = ["c", "a", "A", "b","6","4"];
+// for(let count of arr){
+//     document.writeln(`Ký tự ${count} nằm ở vị trí: ${count.charCodeAt()}.`);
+// }
+// Tăng dần
+// let sortedArr = arr.sort((a, b) => a-b );
+// Giảm dần
+// let sortedArr = arr.sort((a, b) => b-a );
+// document.writeln(sortedArr);
+
+//---------------------------------------------------------------------------------------------------------------------------------------
+
+// Phương thức reduce()
+// Cú pháp array.reduce( function,[initialValue])
+// function: Một hàm để thực thi cho từng phần tử trong mảng.
+// initialValue: Giá trị khởi tạo.
+
+// function(accumulator, currentValue, [currentIndex], [array])
+// Hàm được gọi với những đối số sau:
+// 1: accumulator: Giá trị tích lũy, được cập nhật sau mỗi lần gọi hàm
+// 2: currentValue: Giá trị hiện tại đang được xử lý trong mảng
+// 3: currentIndex: Chỉ số của phần tử đang xử lý
+// 4: array: Mảng đang được reduce
+
+let arr = [1, 2, 3];
+let sum = 0;
+for (let element of arr){
+    document.writeln(element);
+    sum += element
+}
+document.writeln(sum);
+// Khi dùng reduce()
+let sum2= arr.reduce(
+    (accumulator, currentValue, currentIndex, array) => {
+        return accumulator + currentValue;
+    }, 
+    0
+)
