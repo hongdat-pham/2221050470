@@ -129,6 +129,8 @@
 // let arrCon = arr.join(`+`);
 // document.writeln(arrCon);
 
+//----------------------------------------------------------------------------------------------------
+
 // splice()
 // Cú pháp array.splice(start, deleteCount, item1, item2, ...)
 // start: vị trí bắt đầu thay đổi mảng. Nếu là một số âm nó sẽ được tính từ cuối mảng.
@@ -205,18 +207,69 @@
 // 2: currentValue: Giá trị hiện tại đang được xử lý trong mảng
 // 3: currentIndex: Chỉ số của phần tử đang xử lý
 // 4: array: Mảng đang được reduce
+// Nếu không truyền tham số thì sẽ lấy phần tử đầu tiên của mảng làm tham số và bắt đầu tính từ phần tử thứ 2 (index[1])
+// Còn nếu mảng trống mà không truyền initialValue thì sẽ báo lỗi 
 
-let arr = [1, 2, 3];
-let sum = 0;
-for (let element of arr){
-    document.writeln(element);
-    sum += element
-}
-document.writeln(sum);
+// let arr = [1, 2, 3];
+// let sum = 0;
+// for (let element of arr){
+//     document.writeln(element);
+//     sum += element
+// }
+// document.writeln(sum);
+
 // Khi dùng reduce()
-let sum2= arr.reduce(
-    (accumulator, currentValue, currentIndex, array) => {
-        return accumulator + currentValue;
-    }, 
-    0
-)
+// C1:
+// let sum2= arr.reduce(
+    // Tham số thứ nhất: function
+//     (accumulator, currentValue, currentIndex, array) => {
+//         return accumulator + currentValue;
+//     }, 
+//     Tham số thứ hai: initialValue
+//     0
+// );
+// document.writeln(sum2);
+// C2:
+// let sum2 = arr.reduce(
+//     (accumulator, currentValue) => accumulator + currentValue,
+//     0
+// )
+// document.writeln(sum2);
+
+//----------------------------------------------------------------------------------------------------------------
+
+// filter(): trích lọc các phần tử thỏa mãn điều kiện của hàm
+// Dựa trên hàm xử lý -> tạo ra mảng mới từ một mảng đã cho, chỉ chứa các phần tử thỏa mãn một điều kiện nhất định được xác định bởi hàm
+// Cú pháp: array.filter(function)
+// 1. function: Một hàm để thực thi cho từng phần tử trong mảng
+// function(currentValue,[currentIndex],[array])
+// Hàm được gọi với những đối số sau
+// a. currentValue: Giá trị hiện tại đang được xử lý trong mảng 
+// b. currentIndex: ( Tùy chọn) Chỉ số của phần tử đang xử lý
+// c. array: ( Tùy chọn) Mảng đang được duyệt
+
+// let arr = [1, 2, 3, 5, 6, 8];
+// // Tìm những số chẵn trong mảng.
+// let evenNumber = arr.filter(
+//     // function
+//     (value, index, array) => value % 2 == 0
+// );
+// document.writeln(evenNumber);
+
+// Bài tập:
+// Bài 1: Viết chương trình tạo 1 mảng 1 chiều gồm các phần tử là số nguyên, có n phần tử ngẫu nhiên, n do người dùng nhập vào từ bàn phím
+
+let M = [];
+let n;
+while(true){
+    n = Number(prompt(`Mời nhập vào số phần tử của mảng:`));
+    if(Number.isInteger(n) && n>0){
+        break;
+    }
+}
+alert(`Số phần tử của mảng là: ${n}`);
+for(let i = 0; i<n; i++){
+    let input = Number(prompt(`Mời bạn nhập phần tử thứ ${i+1}`));
+    M.push(input);
+}
+alert(M);
