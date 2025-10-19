@@ -259,17 +259,76 @@
 // Bài tập:
 // Bài 1: Viết chương trình tạo 1 mảng 1 chiều gồm các phần tử là số nguyên, có n phần tử ngẫu nhiên, n do người dùng nhập vào từ bàn phím
 
-let M = [];
+// let M = [];
+// let n;
+// while(true){
+//     n = Number(prompt(`Mời nhập vào số phần tử của mảng:`));
+//     if(Number.isInteger(n) && n>0){
+//         break;
+//     }
+// }
+// alert(`Số phần tử của mảng là: ${n}`);
+// for(let i = 0; i<n; i++){
+//     let input = Number(prompt(`Mời bạn nhập phần tử thứ ${i+1}`));
+//     M.push(input);
+// }
+// alert(M);
+// Bài 2: 
+// 1. Viết chương trình tạo 1 mảng 1 chiều gồm các phần tử là số nguyên, n phần tử ngẫu nhiên
+// 2. Xuất các giá trị trong mảng 
+// 3. Đảo ngược mảng và xuất mảng sau khi đảo ngược 
+// 4. Sắp xếp các mảng tăng dần
+// 5. Tính tổng các phần tử trong mảng
+// 6. Cho người dùng nhập 1 số bất kỳ, kiểm tra số đó có tồn tại trong mảng hay không, nếu có xuất ra vị trí index của số đó trong mảng
+
+let M=[];
 let n;
+let k;
+let count = 0;
 while(true){
-    n = Number(prompt(`Mời nhập vào số phần tử của mảng:`));
+    n = parseInt(prompt(`Mời bạn nhập vào số lượng phần tử của mảng`));
     if(Number.isInteger(n) && n>0){
+        alert(`Mảng có ${n} phần tử`);
         break;
     }
 }
-alert(`Số phần tử của mảng là: ${n}`);
+
 for(let i = 0; i<n; i++){
-    let input = Number(prompt(`Mời bạn nhập phần tử thứ ${i+1}`));
-    M.push(input);
+    let random = Math.floor(Math.random() * 100);
+    count += random;
+    M.push(random);
 }
-alert(M);
+document.writeln(`Mảng ngẫu nhiên là: ${M}`);
+
+let reversedM = M.reverse();
+document.writeln(`<br> Mảng ngẫu nhiên sau khi đảo ngược là: ${reversedM}`);
+
+let sortedM1 = [...M];
+let sortedM2 = sortedM1.sort((a, b) => a-b );
+document.writeln(`<br> Mảng sau khi được sắp xếp: ${sortedM2}`);
+document.writeln(`<br> Tổng của các phần tử trong mảng là: ${count}`);
+
+while(true){
+    k = parseInt(prompt(`Nhập số bạn cần tìm`));
+    if(Number.isInteger(k)){
+        alert(`Số cần kiếm là ${k}`);
+        break;
+    }
+}
+
+let check1 = M.indexOf(k);
+if(check1 !== -1){
+    document.writeln(
+        `<br> ${k} nằm ở vị trí Index[${check1}] trước khi được sắp xếp `
+    );
+} else{
+    document.writeln(`<br> Số ${k} không tồn tại trong chuỗi gốc`);
+}
+let check2 = sortedM2.indexOf(k);
+if(check2 !== -1){
+    document.writeln(
+        `<br> ${k} nằm ở vị trí Index[${check2}] sau khi được sắp xếp`
+    );
+} else{
+    document.writeln(`<br> Số ${k} không tồn tại trong chuỗi tăng dần`);
+}
