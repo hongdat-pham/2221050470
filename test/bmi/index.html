@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
     <title>BMI</title>
 </head>
 <body>
-        <input type="number" name="" id="can">Cân nặng(kg);
+    <div class="container">
+        <h1>Tính chỉ số BMI</h1>
+        <input type="number" name="" id="can" placeholder="Cân nặng(kg)">
         <br>
-        <input type="number" name="" id="cao">Chiều cao(m);
+        <input type="number" name="" id="cao" placeholder="Chiều cao(m)">
         <br>
         <button onclick="caculateBMI()">Tính BMI</button>
         <br>
-        <input type="text" value="" id="bmiI">BMI của bạn
+        <input type="text" value="" id="bmiI" placeholder="Kết quả BMI">
         <br>
-        <img id="anh" src="" alt="">
+        <img id="anh" src="./title.jpg" alt="">
+    </div>
 </body>
 </html>

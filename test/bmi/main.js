@@ -26,4 +26,5 @@ const caculateBMI = () => {
     } else {
         img.src = "./beonang.png";
     }
+    img.classList.add("thunho");
 };
