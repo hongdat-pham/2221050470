@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Inline Event</h1>
+    <button onclick="alert(`Clicked`)">Click me!</button>
+    <button onclick="alert(`Clicked`);alert(`Clicked 2`)">Click me!</button>
+    <button ondblclick="alert(`Double Click`)">Double Click!</button>
+    <div onmouseover="this.style.backgroundColor = 'yellow'" onmouseleave="body.style.backgroundColor = 'red'">
+        Xin chào
+    </div>
+    <input type="text" onkeypress="alert(`Bạn đã nhấn 1 phím`)">
+</body>
+</html>
