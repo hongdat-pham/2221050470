@@ -9,12 +9,9 @@ const caculateBMI = () => {
         alert("Vui lòng nhập đúng cân nặng và chiều cao (số dương).");
         return;
     }
-
     let bmi = kg / (m * m);
     document.getElementById("bmiI").value = bmi.toFixed(2);
-
     const img = document.getElementById("anh");
-
     if (bmi < 18.5) {
         img.src = "./thieu.png";
     } else if (bmi < 24.9) {

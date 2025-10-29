@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
 </head>
 
 <body>
@@ -36,13 +37,17 @@
     </header>
     <main>
         <div class="quangcao">
-            <img src="09_68bfea5810013f0001205210.jpg" alt="">
+            <img id="trailer" src="09_68bfea5810013f0001205210.jpg" alt="">
         </div>
         <div class="container">
             <div>
-                <div style="display: flex; justify-content: center;">
+                <div id="banner1" style="display: flex; justify-content: center;">
                     <img class="banner" src="640x396-muado.jpg" alt="">
                 </div>
+                <div id="trailer1" style="display: none; justify-content: center;" >
+                    <iframe id="trailer2" class="banner" src="https://youtu.be/4YlWS4Lrd-0?si=2nWLc0F8rnUJj1s5" frameborder="0"></iframe>
+                </div>
+                <button class="muagoi" onclick="chooseFilm('1')">Xem ngay</button>
                 <div style="display: flex; justify-content: center;">
                     <img class="qc" src="qc.jpg" alt="">
                 </div>
