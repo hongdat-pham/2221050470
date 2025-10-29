@@ -1,0 +1,27 @@
+h1{
+    text-align: center;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-wrap: wrap;
+}
+div{
+    height: 100px;
+    width: 100px;
+    background-color: blanchedalmond;
+    margin: 2px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+img{
+    height: 60px;
+    width: 60px;
+    align-items: center;
+    justify-content: center;
+}
+
