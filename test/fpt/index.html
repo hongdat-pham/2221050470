@@ -41,297 +41,68 @@
         </div>
         <div class="container">
             <div>
-                <div id="banner1" style="display: flex; justify-content: center;">
-                    <img class="banner" src="640x396-muado.jpg" alt="">
-                </div>
-                <div id="trailer1" style="display: none; justify-content: center;" >
-                    <iframe id="trailer2" class="banner" src="https://youtu.be/4YlWS4Lrd-0?si=2nWLc0F8rnUJj1s5" frameborder="0"></iframe>
-                </div>
-                <button class="muagoi" onclick="chooseFilm('1')">Xem ngay</button>
-                <div style="display: flex; justify-content: center;">
-                    <img class="qc" src="qc.jpg" alt="">
-                </div>
-            </div>
+        <div id="banner1" style="display: flex; justify-content: center;">
+            <img class="banner" src="./640x396-muado.jpg" alt="">
+        </div>
+        <div id="trailer1" style="display: none; justify-content: center; flex-direction: column; align-items: center;">
+            <iframe id="trailer2" class="banner" src="" frameborder="0" allowfullscreen></iframe>
+            <button class="btn-close-trailer" onclick="closeTrailer()">Đóng trailer</button>
+        </div>
+        
+        <div class="button-container">
+            <button class="btn-trailer" onclick="doiVideo()">Xem trailer</button>
+        </div>
+        
+        <div style="display: flex; justify-content: center;">
+            <img class="qc" src="qc.jpg" alt="">
+        </div>
+    </div>
             <div class="theloai">
                 <div class="tentheloai">
                     Phim chiếu rạp
                 </div>
                 <div class="danhsach">
-                    <div class="phim">
-                        <div class="anh">
-                            <img src="350x495-muado.jpg" alt="">
-                        </div>
-                        <div class="ten">
-                            Mưa đỏ
-                        </div>
-                    </div>
-                    <div class="phim">
-                        <div class="anh">
-                            <img src="350x495-muado.jpg" alt="">
-                        </div>
-                        <div class="ten">
-                            Mưa đỏ
-                        </div>
-                    </div>
-                    <div class="phim">
-                        <div class="anh">
-                            <img src="350x495-muado.jpg" alt="">
-                        </div>
-                        <div class="ten">
-                            Mưa đỏ
-                        </div>
-                    </div>
-                    <div class="phim">
-                        <div class="anh">
-                            <img src="350x495-muado.jpg" alt="">
-                        </div>
-                        <div class="ten">
-                            Mưa đỏ
-                        </div>
-                    </div>
-                    <div class="phim">
-                        <div class="anh">
-                            <img src="350x495-muado.jpg" alt="">
-                        </div>
-                        <div class="ten">
-                            Mưa đỏ
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
             <div class="theloai">
                 <div class="tentheloai">
-                    Phim chiếu rạp
+                    Phim lẻ
                 </div>
                 <div class="danhsach">
-                    <div class="phim">
-                        <div class="anh">
-                            <img src="350x495-muado.jpg" alt="">
-                        </div>
-                        <div class="ten">
-                            Mưa đỏ
-                        </div>
-                    </div>
-                    <div class="phim">
-                        <div class="anh">
-                            <img src="350x495-muado.jpg" alt="">
-                        </div>
-                        <div class="ten">
-                            Mưa đỏ
-                        </div>
-                    </div>
-                    <div class="phim">
-                        <div class="anh">
-                            <img src="350x495-muado.jpg" alt="">
-                        </div>
-                        <div class="ten">
-                            Mưa đỏ
-                        </div>
-                    </div>
-                    <div class="phim">
-                        <div class="anh">
-                            <img src="350x495-muado.jpg" alt="">
-                        </div>
-                        <div class="ten">
-                            Mưa đỏ
-                        </div>
-                    </div>
-                    <div class="phim">
-                        <div class="anh">
-                            <img src="350x495-muado.jpg" alt="">
-                        </div>
-                        <div class="ten">
-                            Mưa đỏ
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
             <div class="theloai">
                 <div class="tentheloai">
-                    Phim chiếu rạp
+                    Phim hoạt hình
                 </div>
                 <div class="danhsach">
-                    <div class="phim">
-                        <div class="anh">
-                            <img src="350x495-muado.jpg" alt="">
-                        </div>
-                        <div class="ten">
-                            Mưa đỏ
-                        </div>
-                    </div>
-                    <div class="phim">
-                        <div class="anh">
-                            <img src="350x495-muado.jpg" alt="">
-                        </div>
-                        <div class="ten">
-                            Mưa đỏ
-                        </div>
-                    </div>
-                    <div class="phim">
-                        <div class="anh">
-                            <img src="350x495-muado.jpg" alt="">
-                        </div>
-                        <div class="ten">
-                            Mưa đỏ
-                        </div>
-                    </div>
-                    <div class="phim">
-                        <div class="anh">
-                            <img src="350x495-muado.jpg" alt="">
-                        </div>
-                        <div class="ten">
-                            Mưa đỏ
-                        </div>
-                    </div>
-                    <div class="phim">
-                        <div class="anh">
-                            <img src="350x495-muado.jpg" alt="">
-                        </div>
-                        <div class="ten">
-                            Mưa đỏ
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
             <div class="theloai">
                 <div class="tentheloai">
-                    Phim chiếu rạp
+                    Phim Việt Nam
                 </div>
                 <div class="danhsach">
-                    <div class="phim">
-                        <div class="anh">
-                            <img src="350x495-muado.jpg" alt="">
-                        </div>
-                        <div class="ten">
-                            Mưa đỏ
-                        </div>
-                    </div>
-                    <div class="phim">
-                        <div class="anh">
-                            <img src="350x495-muado.jpg" alt="">
-                        </div>
-                        <div class="ten">
-                            Mưa đỏ
-                        </div>
-                    </div>
-                    <div class="phim">
-                        <div class="anh">
-                            <img src="350x495-muado.jpg" alt="">
-                        </div>
-                        <div class="ten">
-                            Mưa đỏ
-                        </div>
-                    </div>
-                    <div class="phim">
-                        <div class="anh">
-                            <img src="350x495-muado.jpg" alt="">
-                        </div>
-                        <div class="ten">
-                            Mưa đỏ
-                        </div>
-                    </div>
-                    <div class="phim">
-                        <div class="anh">
-                            <img src="350x495-muado.jpg" alt="">
-                        </div>
-                        <div class="ten">
-                            Mưa đỏ
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
             <div class="theloai">
                 <div class="tentheloai">
-                    Phim chiếu rạp
+                    Phim kinh dị
                 </div>
                 <div class="danhsach">
-                    <div class="phim">
-                        <div class="anh">
-                            <img src="350x495-muado.jpg" alt="">
-                        </div>
-                        <div class="ten">
-                            Mưa đỏ
-                        </div>
-                    </div>
-                    <div class="phim">
-                        <div class="anh">
-                            <img src="350x495-muado.jpg" alt="">
-                        </div>
-                        <div class="ten">
-                            Mưa đỏ
-                        </div>
-                    </div>
-                    <div class="phim">
-                        <div class="anh">
-                            <img src="350x495-muado.jpg" alt="">
-                        </div>
-                        <div class="ten">
-                            Mưa đỏ
-                        </div>
-                    </div>
-                    <div class="phim">
-                        <div class="anh">
-                            <img src="350x495-muado.jpg" alt="">
-                        </div>
-                        <div class="ten">
-                            Mưa đỏ
-                        </div>
-                    </div>
-                    <div class="phim">
-                        <div class="anh">
-                            <img src="350x495-muado.jpg" alt="">
-                        </div>
-                        <div class="ten">
-                            Mưa đỏ
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
             <div class="theloai">
                 <div class="tentheloai">
-                    Phim chiếu rạp
+                    Phim hài 
                 </div>
                 <div class="danhsach">
-                    <div class="phim">
-                        <div class="anh">
-                            <img src="350x495-muado.jpg" alt="">
-                        </div>
-                        <div class="ten">
-                            Mưa đỏ
-                        </div>
-                    </div>
-                    <div class="phim">
-                        <div class="anh">
-                            <img src="350x495-muado.jpg" alt="">
-                        </div>
-                        <div class="ten">
-                            Mưa đỏ
-                        </div>
-                    </div>
-                    <div class="phim">
-                        <div class="anh">
-                            <img src="350x495-muado.jpg" alt="">
-                        </div>
-                        <div class="ten">
-                            Mưa đỏ
-                        </div>
-                    </div>
-                    <div class="phim">
-                        <div class="anh">
-                            <img src="350x495-muado.jpg" alt="">
-                        </div>
-                        <div class="ten">
-                            Mưa đỏ
-                        </div>
-                    </div>
-                    <div class="phim">
-                        <div class="anh">
-                            <img src="350x495-muado.jpg" alt="">
-                        </div>
-                        <div class="ten">
-                            Mưa đỏ
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
